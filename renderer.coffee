@@ -1,5 +1,3 @@
-utils = require '../utils'
-
 cheerio = require 'cheerio'
 { Renderer } = require 'marked'
 
