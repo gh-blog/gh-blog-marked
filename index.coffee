@@ -6,16 +6,18 @@ renderer = require './renderer'
 
 module.exports = (options) ->
     processFile = (file, enc, done) ->
-        md = file.contents.toString()
+        if path.extname(file.path).match /.md|.mdown|.markdown|.gfm/i
+            md = file.contents.toString()
 
-        marked.setOptions { renderer }
-        html = marked md
+            marked.setOptions { renderer }
+            html = marked md
 
-        file.$ = cheerio.load html
-        file.isPost = yes
-        file.contents = new Buffer html
-        oldExtname = path.extname file.path
-        file.path = file.path.replace (new RegExp "#{oldExtname}$"), '.html'
+            file.$ = cheerio.load html
+            file.isPost = yes
+            file.contents = new Buffer html
+            oldExtname = path.extname file.path
+            file.path = file.path.replace (new RegExp "#{oldExtname}$"), '.html'
+
         done null, file
 
     through2.obj processFile
