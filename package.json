@@ -1,17 +1,17 @@
 {
-  "name": "pipelog-marked",
+  "name": "gh-blog-marked",
   "version": "0.0.0",
-  "description": "Pipelog plugin, converts markdown to HTML using marked.js",
+  "description": "gh-blog plugin, converts markdown to HTML using marked.js",
   "main": "index.js",
   "scripts": {
     "test": "node test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/forabi/pipelog-marked.git"
+    "url": "https://github.com/gh-blog/gh-blog-marked.git"
   },
   "keywords": [
-    "pipelog-plugin",
+    "gh-blog-plugin",
     "marked",
     "markdown",
     "html",
@@ -21,7 +21,7 @@
   "author": "Muhammad Fawwaz Orabi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/forabi/pipelog-md-to-html/issues"
+    "url": "https://github.com/gh-blog/gh-blog-md-to-html/issues"
   },
-  "homepage": "https://github.com/forabi/pipelog-md-to-html"
+  "homepage": "https://github.com/gh-blog/gh-blog-md-to-html"
 }
