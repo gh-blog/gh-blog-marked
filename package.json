@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/gh-blog/gh-blog-md-to-html/issues"
   },
-  "homepage": "https://github.com/gh-blog/gh-blog-md-to-html"
+  "homepage": "https://github.com/gh-blog/gh-blog-md-to-html",
+  "dependencies": {
+    "cheerio": "^0.17.0",
+    "marked": "^0.3.2",
+    "through2": "^0.6.1"
+  }
 }

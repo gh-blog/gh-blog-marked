@@ -1,4 +1,3 @@
-cheerio = require 'cheerio'
 { Renderer } = require 'marked'
 
 renderer = new Renderer
