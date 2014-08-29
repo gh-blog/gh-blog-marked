@@ -13,7 +13,6 @@ module.exports = (options) ->
             html = marked md
 
             file.$ = cheerio.load html
-            file.isPost = yes
             file.contents = new Buffer html
             oldExtname = path.extname file.path
             file.path = file.path.replace (new RegExp "#{oldExtname}$"), '.html'
