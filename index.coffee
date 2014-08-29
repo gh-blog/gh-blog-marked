@@ -3,13 +3,13 @@ through2 = require 'through2'
 marked = require 'marked'
 cheerio = require 'cheerio'
 renderer = require './renderer'
+marked.setOptions { renderer }
 
 module.exports = (options) ->
     processFile = (file, enc, done) ->
         if path.extname(file.path).match /.md|.mdown|.markdown|.gfm/i
             md = file.contents.toString()
 
-            marked.setOptions { renderer }
             html = marked md
 
             file.$ = cheerio.load html
