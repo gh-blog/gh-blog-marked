@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gh-blog/gh-blog-marked.git"
+    "url": "https://github.com/gh-blog/marked"
   },
   "keywords": [
     "gh-blog-plugin",
@@ -21,9 +21,9 @@
   "author": "Muhammad Fawwaz Orabi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gh-blog/gh-blog-md-to-html/issues"
+    "url": "https://github.com/gh-blog/md-to-html/issues"
   },
-  "homepage": "https://github.com/gh-blog/gh-blog-md-to-html",
+  "homepage": "https://github.com/gh-blog/md-to-html",
   "dependencies": {
     "cheerio": "^0.17.0",
     "marked": "^0.3.2",
