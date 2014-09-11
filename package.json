@@ -25,9 +25,13 @@
   },
   "homepage": "https://github.com/gh-blog/md-to-html",
   "dependencies": {
-    "cheerio": "^0.17.0",
     "marked": "^0.3.2",
     "through2": "^0.6.1",
     "uslug": "^1.0.3"
+  },
+  "gh-blog": {
+    "requires": ["info"],
+    "recommends": ["front-matter"],
+    "provides": ["content"]
   }
 }
