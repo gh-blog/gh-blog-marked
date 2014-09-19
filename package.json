@@ -1,6 +1,6 @@
 {
   "name": "gh-blog-marked",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "gh-blog plugin, converts markdown to HTML using marked.js",
   "main": "index.js",
   "scripts": {
